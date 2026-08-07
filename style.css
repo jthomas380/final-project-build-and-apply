@@ -1,0 +1,126 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Landing section */
+
+.nav__container {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.nav__logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav__logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav__text {
+  color: #333;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__links a {
+  position: relative;
+  color: black;
+  display: inline-block;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.nav__links a::after {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.nav__links a:hover {
+  transform: translateY(-3px);
+  color: black;
+}
+
+.nav__links a:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.nav__button {
+  position: relative;
+  background-color: #5520bff7;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.nav__button::after {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav__button:hover {
+  transform: translateY(-3px);
+  background-color: #6d2fe0;
+}
+
+.nav__button:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
