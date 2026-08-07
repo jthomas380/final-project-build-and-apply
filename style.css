@@ -187,8 +187,9 @@ a {
 /* First Section  */
 
 .fsec__container {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 .fsec__row {
@@ -196,6 +197,105 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 3rem;
 }
 
+.fsec__column--left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 0;
+  max-width: 490px;
+}
+
+.fsec__title {
+  font-size: 44px;
+  color: #5520bff7;
+  margin: 0 0 1rem;
+  text-align: left;
+  width: 100%;
+  line-height: 1.1;
+}
+
+.fsec__subtext {
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.features {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin: 1rem 0 1.5rem;
+}
+
+.fsec__feature {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.fsec__feature li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.21rem;
+}
+
+.fsec__feature li::before {
+  content: "✓";
+  color: #5520bff7;
+  font-weight: 700;
+}
+
+.fsec__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.fsec__button--left,
+.fsec__button--right {
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.fsec__button--left {
+  background-color: #5520bff7;
+  color: white;
+}
+
+.fsec__button--right {
+  background-color: rgba(119, 116, 116, 0.196);
+  color: #334155;
+}
+
+.fsec__button--left:hover,
+.fsec__button--right:hover {
+  transform: translateY(-2px);
+}
+
+.fsec__img-container {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+}
+
+.fsec__img-container img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+/* Landing pages */
