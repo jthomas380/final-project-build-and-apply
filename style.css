@@ -13,6 +13,22 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-size: 44px;
+  color: #5520bff7;
+  text-align: left;
+  width: 100%;
+  line-height: 1.1;
+}
+
+.subtext {
+  font-size: 1.15rem;
+  line-height: 1.4;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Landing section */
 
 .nav__container {
@@ -187,9 +203,9 @@ a {
 /* First Section  */
 
 .fsec__container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 8rem 1rem;
 }
 
 .fsec__row {
@@ -200,26 +216,17 @@ a {
   gap: 3rem;
 }
 
+.fsec__title {
+  width: 100%;
+  margin: 0 0 1rem;
+}
+
 .fsec__column--left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex: 1 1 0;
   max-width: 490px;
-}
-
-.fsec__title {
-  font-size: 44px;
-  color: #5520bff7;
-  margin: 0 0 1rem;
-  text-align: left;
-  width: 100%;
-  line-height: 1.1;
-}
-
-.fsec__subtext {
-  font-size: 1.15rem;
-  line-height: 1.4;
 }
 
 .features {
@@ -299,3 +306,181 @@ a {
 }
 
 /* Landing pages */
+
+.lp__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.lp__title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.lp__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.lp__card {
+  background: #f7f5ff;
+  border: 1px solid #e4dcff;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(85, 32, 191, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  transform: translateY(0);
+}
+
+.lp__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+.lp__preview {
+  height: 200px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e2e8f0 100%);
+  margin-bottom: 1rem;
+}
+
+.lp__card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+.lp__card a {
+  display: inline-block;
+  color: #5520bff7;
+  font-weight: 600;
+}
+
+.lp__card a:hover {
+  text-decoration: underline;
+}
+
+.lp__preview {
+  display: block;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #edf0f5;
+  cursor: pointer;
+}
+
+.lp__preview img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top center;
+  transform: translateY(0);
+  transition: transform 2.5s ease-in-out;
+  will-change: transform;
+}
+
+.lp__preview:hover img {
+  transform: translateY(calc(-100% + 400px));
+}
+
+/* Inner pages */
+
+.ip__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ip__title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.ip__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ip__card {
+  background: #f7f5ff;
+  border: 1px solid #e4dcff;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(85, 32, 191, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  transform: translateY(0);
+}
+
+.ip__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+.ip__preview {
+  display: block;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f8f5ff 0%, #f3e8ff 100%);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.ip__preview img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top center;
+  transform: translateY(0);
+  transition: transform 2.5s ease-in-out;
+  will-change: transform;
+}
+
+.ip__preview:hover img {
+  transform: translateY(calc(-100% + 400px));
+}
+
+.ip__card a {
+  display: inline-block;
+  color: #5520bff7;
+  font-weight: 600;
+}
+
+.ip__card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .ip__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .ip__grid {
+    grid-template-columns: 1fr;
+  }
+}
