@@ -1,789 +1,762 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="A responsive SaaS product landing page inspired by the Treact template."
+  />
+  <title>Treact — SaaS Product Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <title>
-        Free Modern React Templates & Components for Building Landing Pages and
-        UIs - Treact
-      </title>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-      <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet"
-      />
+  <!-- ========================================
+       HEADER
+  ========================================= -->
+  <header class="site-header">
+    <nav class="site-header__nav page-container" aria-label="Primary navigation">
+      <a class="site-header__brand" href="#home" aria-label="Treact home">
+        <span class="site-header__logo" aria-hidden="true">T</span>
+        <span>Treact</span>
+      </a>
 
-      <link rel="stylesheet" href="./style.css" />
-      <script src="./index.js" defer></script>
-    </head>
-  </head>
-  <section id="landing">
-    <nav>
-      <div class="nav__container">
-        <div class="nav__logo">
-          <img
-            src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-            alt="Treact Logo"
-          />
-          <h2 class="nav__text">Treact</h2>
-        </div>
+      <button
+        class="site-header__menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <button
-          class="nav__menu-toggle"
-          type="button"
-          aria-label="Toggle navigation menu"
-        ></button>
-
-        <ul class="nav__links">
-          <li><a href="#license">License & Usage</a></li>
-          <li><a href="#about">Who Am I</a></li>
-          <li><a href="#twitter">Twitter</a></li>
-          <li><a href="#contact">Hire Me</a></li>
-          <li>
-            <button class="nav__button" type="button">Download Now</button>
-          </li>
-        </ul>
+      <div class="site-header__links" id="primary-menu">
+        <a href="#features">About</a>
+        <a href="#quality">Blog</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#home">Login</a>
+        <a class="button button--small" href="#pricing">Sign Up</a>
       </div>
     </nav>
-  </section>
-  <section id="first-section">
-    <nav>
-      <div class="fsec__container">
-        <div class="fsec__row">
-          <div class="fsec__column--left">
-            <h1 class="title fsec__title">
-              Free Modern React Templates for every need.
-            </h1>
-            <p class="subtext">
-              Easily customizable modern React UI Templates and Components built
-              using TailwindCSS which are also lightweight and simple to setup.
-              All components are modular and fully responsive for great mobile
-              experience as well as big desktop screens. Brand Colors are also
-              fully customizable. Free for personal as well as commercial use.
-            </p>
-            <div class="features">
-              <ul class="fsec__feature">
-                <li>7 Landing Page Demos</li>
-                <li>52 Components</li>
-                <li>Fully Responsive</li>
-              </ul>
-              <ul class="fsec__feature">
-                <li>8 Inner Pages</li>
-                <li>Uses TailwindCSS</li>
-                <li>Fully Customizable</li>
-              </ul>
-            </div>
-            <div class="fsec__buttons">
-              <button class="fsec__button--left" type="button">
-                Explore Demos
-              </button>
-              <button class="fsec__button--right" type="button">
-                View Components
-              </button>
-            </div>
-          </div>
-          <div class="fsec__img-container">
+  </header>
+
+  <main id="main-content">
+    <!-- ========================================
+         HERO
+    ========================================= -->
+    <section class="hero-section section" id="home">
+      <div class="hero-section__shape hero-section__shape--left" aria-hidden="true"></div>
+
+      <div class="hero-section__layout page-container">
+        <div class="hero-section__content">
+          <h1 class="hero-section__heading">
+            Beautiful React Templates <span>for you.</span>
+          </h1>
+
+          <p class="hero-section__description">
+            Our templates are easy to setup, understand and customize. Fully modular
+            components with a variety of pages and components.
+          </p>
+
+          <form class="hero-section__form" novalidate>
+            <label class="sr-only" for="hero-email">Your email address</label>
+            <input
+              id="hero-email"
+              name="email"
+              type="email"
+              placeholder="Your E-mail Address"
+              autocomplete="email"
+              required
+            />
+            <button class="button hero-section__submit" type="submit">Get Started</button>
+          </form>
+
+          <p class="hero-section__form-message" role="status" aria-live="polite"></p>
+
+          <div class="hero-section__customers">
+            <p>Our Trusted Customers</p>
             <img
-              src="assets/MainLandingPageHero.30b380787ef7adb09eb6.png"
-              alt="Main Landing Page Hero"
+              src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+              alt="Fortune, The Weather Channel, Fast Company, and National Geographic"
             />
           </div>
         </div>
+
+        <div class="hero-section__image-wrap">
+          <img
+            class="hero-section__image"
+            src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+            alt="Designer working at a desk in a modern studio"
+          />
+        </div>
       </div>
-    </nav>
-  </section>
-  <section class="landing-pages">
-    <div class="lp__container">
-      <h1 class="title lp__title">Landing Pages</h1>
-      <p class="subtext">
-        We have 7 premade landing pages. Click on the “View Live Demo” button to
-        see them in action. Customizing or creating your own custom landing page
-        is really simple by using our UI components.
+    </section>
+
+    <!-- ========================================
+     FEATURES
+========================================= -->
+<section
+  class="features-section section"
+  id="features"
+>
+
+  <!-- ========================================
+       DECORATIVE SHAPE
+  ========================================= -->
+  <div
+    class="features-section__shape"
+    aria-hidden="true"
+  ></div>
+
+
+  <div class="page-container">
+
+    <!-- ========================================
+         FEATURES HEADER
+    ========================================= -->
+    <div class="features-section__header">
+
+      <p class="features-section__eyebrow">
+        Features
       </p>
-      <div class="lp__grid">
-        <article class="lp__card">
-          <a
-            class="lp__preview"
-            href="https://treact.owaiskhan.me/components/landingPages/RestaurantLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/RestaurantLandingPage.png" />
-          </a>
 
-          <a
-            href="https://treact.owaiskhan.me/components/landingPages/RestaurantLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        <article class="lp__card">
-          <a
-            class="lp__preview"
-            href="https://treact.owaiskhan.me/components/landingPages/HotelTravelLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/HotelTravelLandingPage.png" />
-          </a>
 
-          <a
-            href="https://treact.owaiskhan.me/components/landingPages/HotelTravelLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        <article class="lp__card">
-          <a
-            class="lp__preview"
-            href="https://treact.owaiskhan.me/components/landingPages/SaaSProductLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/SaaSProductLandingPage.png" />
-          </a>
+      <h2 class="features-section__heading">
+        We have
 
-          <a
-            href="https://treact.owaiskhan.me/components/landingPages/SaaSProductLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        <article class="lp__card">
-          <a
-            class="lp__preview"
-            href="https://treact.owaiskhan.me/components/landingPages/ServiceLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/ServiceLandingPage.png" />
-          </a>
+        <span class="features-section__highlight">
+          Amazing Service.
+        </span>
+      </h2>
 
-          <a
-            href="https://treact.owaiskhan.me/components/landingPages/ServiceLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        <article class="lp__card">
-          <a
-            class="lp__preview"
-            href="https://treact.owaiskhan.me/components/landingPages/AgencyLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/AgencyLandingPage.png" />
-          </a>
 
-          <a
-            href="https://treact.owaiskhan.me/components/landingPages/AgencyLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        </article>
-        <article class="lp__card">
-          <a
-            class="lp__preview"
-            href="https://treact.owaiskhan.me/components/landingPages/EventLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/EventLandingPage.png" />
-          </a>
+      <p class="features-section__description">
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+      </p>
 
-          <a
-            href="https://treact.owaiskhan.me/components/landingPages/EventLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        <article class="lp__card">
-          <a
-            class="lp__preview"
-            href="https://treact.owaiskhan.me/components/landingPages/HostingCloudLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/HostingCloudLandingPage.png" />
-          </a>
-
-          <a
-            href="https://treact.owaiskhan.me/components/landingPages/HostingCloudLandingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>        
-      </div>
     </div>
-  </section>
-  <section class="inner-pages">
-    <div class="ip__container">
-      <h1 class="title ip__title">Inner Pages</h1>
-      <p class="subtext">
-        We also provide 8 additional inner pages for your various needs like a signup, login, pricing, about us, contact, blog etc. To view them in action click the "View Live Demo" button.
-      </p>
-      <div class="ip__grid">
-        <article class="ip__card">
-          <a
-            class="ip__preview"
-            href="https://treact.owaiskhan.me/components/innerPages/LoginPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/innerPages_LoginPage.png" />
-          </a>
 
-          <a
-            href="https://treact.owaiskhan.me/components/innerPages/LoginPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        <article class="ip__card">
-          <a
-            class="ip__preview"
-            href="https://treact.owaiskhan.me/components/innerPages/SignupPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/innerPages_SignupPage.png" />
-          </a>
 
-          <a
-            href="https://treact.owaiskhan.me/components/innerPages/SignupPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        </article>
-        <article class="ip__card">
-          <a
-            class="ip__preview"
-            href="https://treact.owaiskhan.me/components/innerPages/PricingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/innerPages_PricingPage.png" />
-          </a>
+    <!-- ========================================
+         FEATURES GRID
+    ========================================= -->
+    <div class="features-section__grid">
 
-          <a
-            href="https://treact.owaiskhan.me/components/innerPages/PricingPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        </article>
-        <article class="ip__card">
-          <a
-            class="ip__preview"
-            href="https://treact.owaiskhan.me/components/innerPages/AboutUsPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/innerPages_AboutUsPage.png" />
-          </a>
+      <!-- ========================================
+           SECURE
+      ========================================= -->
+      <article class="features-section__item">
 
-          <a
-            href="https://treact.owaiskhan.me/components/innerPages/AboutUsPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        </article>
-        <article class="ip__card">
-          <a
-            class="ip__preview"
-            href="https://treact.owaiskhan.me/components/innerPages/ContactUsPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/innerPages_ContactUsPage.png" />
-          </a>
-
-          <a
-            href="https://treact.owaiskhan.me/components/innerPages/ContactUsPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        </article>
-        <article class="ip__card">
-          <a
-            class="ip__preview"
-            href="https://treact.owaiskhan.me/components/innerPages/BlogIndexPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/innerPages_BlogIndexPage.png" />
-          </a>
-
-          <a
-            href="https://treact.owaiskhan.me/components/innerPages/BlogIndexPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        </article>
-        <article class="ip__card">
-          <a
-            class="ip__preview"
-            href="https://treact.owaiskhan.me/components/innerPages/TermsOfServicePage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/innerPages_TermsOfServicePage.png" />
-          </a>
-
-          <a
-            href="https://treact.owaiskhan.me/components/innerPages/TermsOfServicePage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-        </article>
-        <article class="ip__card">
-          <a
-            class="ip__preview"
-            href="https://treact.owaiskhan.me/components/innerPages/PrivacyPolicyPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="assets/innerPages_PrivacyPolicyPage.png" />
-          </a>
-
-          <a
-            href="https://treact.owaiskhan.me/components/innerPages/PrivacyPolicyPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Demo
-          </a>
-        </article>
-      </div>
-    </div>          
-        </section>
-        <section class="componet__block">
-          <div class="cb__container">
-            <h1 class="title">Componet Blocks</h1>
-            <p class="subtext">We also provide 52 components along with the premade landing pages so you can create your own landing page within minutes as you see fit. You can combine these components to create 1000s of unique attractive web pages.</p>
-          </div>
-          <article class="component__card">
-
-      <div class="component__heading">
-        <h3 class="component__title">With Background Image</h3>
-
-        <a
-          class="component__button"
-          href="https://treact.owaiskhan.me/components/blocks/Hero/BackgroundAsImage"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Live Demo
-          <span aria-hidden="true">→</span>
-        </a>
-      </div>
-
-      <iframe
-        class="component__preview"
-        src="https://treact.owaiskhan.me/components/blocks/Hero/BackgroundAsImage"
-        title="Hero Section With Background Image"
-        loading="lazy"
-      ></iframe>
-
-    
-
-  </div>
-  </div>
-
-        </section>
-
-<section class="modern-reaction">
-  <!-- HERO CARD: IMAGE ILLUSTRATION AND VIDEO -->
-<article class="component__card">
-
-  <div class="component__heading">
-    <h3 class="component__title">
-      With Image Illustration and Video
-    </h3>
-
-    <a
-      class="component__button"
-      href="https://treact.owaiskhan.me/components/blocks/Hero/IllustrationAndVideo"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      View Live Demo
-      <span aria-hidden="true">→</span>
-    </a>
-  </div>
-
-  <!-- COMPLETE HERO PREVIEW -->
-  <div class="hiv__preview">
-
-    <!-- Navigation -->
-    <header class="hiv__header">
-      <div class="hiv__nav">
-
-        <a class="hiv__logo" href="#">Treact</a>
-
-        <nav class="hiv__nav-links" aria-label="Hero navigation">
-          <a href="#about">About</a>
-          <a href="#blog">Blog</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#contact">Contact Us</a>
-        </nav>
-
-        <div class="hiv__account">
-          <a class="hiv__login" href="#login">Login</a>
-
-          <a class="hiv__signup" href="#signup">
-            Sign Up
-          </a>
-        </div>
-
-      </div>
-    </header>
-
-    <!-- Hero Content -->
-    <div class="hiv__hero">
-
-      <div class="hiv__content">
-
-        <h1 class="title">
-          <span>Modern React</span>
-          <span>Templates, Just</span>
-          <span>For You</span>
-        </h1>
-
-        <p class="subtext">
-          Our templates are easy to setup, understand and customize.
-          Fully modular components with a variety of pages and components.
-        </p>
-
-        <div class="hiv__actions">
-
-          <button class="hiv__get-started" type="button">
-            Get Started
-          </button>
-
-          <button
-            class="hiv__watch-video"
-            type="button"
-            aria-label="Watch introduction video"
-          >
-            <span class="hiv__play-icon" aria-hidden="true"></span>
-            <span>Watch Video</span>
-          </button>
-
-        </div>
-      </div>
-
-      <!-- Illustration Placeholder -->
-      <div class="hiv__visual">
-
-        
-
-        
         <img
-          class="hiv__illustration"
-          src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
-          alt="Person standing beside a website illustration"
+          class="features-section__icon"
+          src="assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+          alt="Secure feature icon"
         />
-        
 
-      </div>
 
-    </div>
-  </div>
-</article>
-</section>
-<!-- PRICING SECTION -->
-<section class="pricing-section">
-  <div class="pricing__container">
+        <div class="features-section__content">
 
-    <h2 class="pricing__section-title">Pricing Section</h2>
+          <h3 class="features-section__title">
+            Secure
+          </h3>
 
-    <article class="component__card">
 
-      <div class="component__heading">
-        <h3 class="component__title">
-          Two Plans With Duration Switcher
-        </h3>
-
-        <a
-          class="component__button"
-          href="https://treact.owaiskhan.me/components/blocks/Pricing/TwoPlansWithDurationSwitcher"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Live Demo
-          <span aria-hidden="true">→</span>
-        </a>
-      </div>
-
-      <div class="pricing__preview">
-
-        <div class="pricing__header">
-          <span class="pricing__label">Pricing</span>
-
-          <h1 class="pricing__title">Flexible Plans.</h1>
-
-          <p class="pricing__description">
-            Choose a flexible plan that fits your current needs and gives you
-            room to grow as your website or business expands.
+          <p class="features-section__text">
+            We strictly only deal with vendors that
+            provide top notch security.
           </p>
 
-          <div class="pricing__switch">
-            <button
-              class="pricing__switch-button pricing__switch-button--active"
-              type="button"
-              data-duration="monthly"
-              aria-pressed="true"
-            >
-              Monthly
-            </button>
-
-            <button
-              class="pricing__switch-button"
-              type="button"
-              data-duration="yearly"
-              aria-pressed="false"
-            >
-              Yearly
-            </button>
-          </div>
         </div>
 
-        <div class="pricing__plans">
+      </article>
 
-          <!-- FREE PLAN -->
-          <article
-            class="pricing__card"
-            data-monthly-price="0"
-            data-yearly-price="0"
-          >
-            <div class="pricing__card-header">
-              <div class="pricing__price">
-                $<span class="pricing__amount">0</span>
-                <span class="pricing__duration">/ month</span>
-              </div>
 
-              <h2 class="pricing__plan-title">Free Plan</h2>
-              <p class="pricing__plan-subtitle">For Personal Blogs</p>
-            </div>
+      <!-- ========================================
+           24/7 SUPPORT
+      ========================================= -->
+      <article class="features-section__item">
 
-            <div class="pricing__features">
-              <ul>
-                <li>30 Templates</li>
-                <li>7 Landing Pages</li>
-                <li>12 Internal Pages</li>
-                <li>Basic Assistance</li>
-              </ul>
+        <img
+          class="features-section__icon"
+          src="assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+          alt="24/7 support feature icon"
+        />
 
-              <button class="pricing__buy-button" type="button" disabled>
-                Buy Now
-              </button>
-            </div>
-          </article>
 
-          <!-- PRO PLAN -->
-          <article
-            class="pricing__card pricing__card--pro"
-            data-monthly-price="49"
-            data-yearly-price="499"
-          >
-            <div class="pricing__card-header">
-              <div class="pricing__price">
-                $<span class="pricing__amount">49</span>
-                <span class="pricing__duration">/ month</span>
-              </div>
+        <div class="features-section__content">
 
-              <h2 class="pricing__plan-title">Pro Plan</h2>
-              <p class="pricing__plan-subtitle">
-                Suited for Production Websites
-              </p>
-            </div>
+          <h3 class="features-section__title">
+            24/7 Support
+          </h3>
 
-            <div class="pricing__features">
-              <ul>
-                <li>60 Templates</li>
-                <li>8 Landing Pages</li>
-                <li>22 Internal Pages</li>
-                <li>Priority Assistance</li>
-                <li>Lifetime Updates</li>
-              </ul>
 
-              <button class="pricing__buy-button" type="button" disabled>
-                Buy Now
-              </button>
-            </div>
-          </article>
+          <p class="features-section__text">
+            Lorem ipsum donor amet siti ceali ut enim
+            ad minim veniam, quis nostrud.
+          </p>
 
+        </div>
+
+      </article>
+
+
+      <!-- ========================================
+           CUSTOMIZABLE
+      ========================================= -->
+      <article class="features-section__item">
+
+        <img
+          class="features-section__icon"
+          src="assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+          alt="Customizable feature icon"
+        />
+
+
+        <div class="features-section__content">
+
+          <h3 class="features-section__title">
+            Customizable
+          </h3>
+
+
+          <p class="features-section__text">
+            Lorem ipsum donor amet siti ceali ut enim
+            ad minim veniam, quis nostrud.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- ========================================
+           RELIABLE
+      ========================================= -->
+      <article class="features-section__item">
+
+        <img
+          class="features-section__icon"
+          src="assets/contact-us_files/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+          alt="Reliable feature icon"
+        />
+
+
+        <div class="features-section__content">
+
+          <h3 class="features-section__title">
+            Reliable
+          </h3>
+
+
+          <p class="features-section__text">
+            Lorem ipsum donor amet siti ceali ut enim
+            ad minim veniam, quis nostrud.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- ========================================
+           FAST
+      ========================================= -->
+      <article class="features-section__item">
+
+        <img
+          class="features-section__icon"
+          src="assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+          alt="Fast feature icon"
+        />
+
+
+        <div class="features-section__content">
+
+          <h3 class="features-section__title">
+            Fast
+          </h3>
+
+
+          <p class="features-section__text">
+            Lorem ipsum donor amet siti ceali ut enim
+            ad minim veniam, quis nostrud.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- ========================================
+           EASY
+      ========================================= -->
+      <article class="features-section__item">
+
+        <img
+          class="features-section__icon"
+          src="assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+          alt="Easy feature icon"
+        />
+
+
+        <div class="features-section__content">
+
+          <h3 class="features-section__title">
+            Easy
+          </h3>
+
+
+          <p class="features-section__text">
+            Lorem ipsum donor amet siti ceali ut enim
+            ad minim veniam, quis nostrud.
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- ========================================
+         QUALITY WORK
+    ========================================= -->
+    <section class="quality-section section" id="quality">
+      <div class="split-layout page-container">
+        <div class="split-layout__content">
+          <p class="section-heading__eyebrow">Quality Work</p>
+          <h2 class="section-heading__title">
+            Designed &amp; Developed by <span>Professionals.</span>
+          </h2>
+          <p class="split-layout__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </p>
+          <a class="button" href="#steps">Learn More</a>
+        </div>
+
+        <div class="quality-section__image-wrap">
+          <img
+            class="quality-section__image"
+            src="assets/hero-screenshot-1.40a097b525c2f8c9808e.png"
+            alt="Preview of the Treact landing page design"
+          />
+          <span class="dot-pattern dot-pattern--quality" aria-hidden="true"></span>
         </div>
       </div>
-    </article>
-  </div>
-</section>
-<section class="flexable-plans">
-  <!-- SIMPLE THREE PLANS -->
-<article class="component__card">
+    </section>
 
-  <div class="component__heading">
-    <h3 class="component__title">Simple Three Plans</h3>
+    <!-- ========================================
+         STEPS
+    ========================================= -->
+    <section class="steps-section section" id="steps">
+      <div class="split-layout split-layout--reverse page-container">
+        <div class="steps-section__image-wrap">
+          <img
+            class="steps-section__image"
+            src="assets/hero-screenshot-2.241aac1fbc66db29d873.png"
+            alt="Treact template displayed on a laptop"
+          />
+          <span class="dot-pattern dot-pattern--steps" aria-hidden="true"></span>
+        </div>
 
-    <a
-      class="component__button"
-      href="https://treact.owaiskhan.me/components/blocks/Pricing/ThreePlans"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      View Live Demo
-      <span aria-hidden="true">→</span>
-    </a>
-  </div>
+        <div class="split-layout__content">
+          <p class="section-heading__eyebrow">Steps</p>
+          <h2 class="section-heading__title">Easy to <span>Get Started.</span></h2>
 
-  <div class="pricing__three-plans">
+          <ol class="steps-section__list">
+            <li class="steps-section__item">
+              <span class="steps-section__number">01</span>
+              <div>
+                <h3>Register</h3>
+                <p>Create an account with us using Google or Facebook.</p>
+              </div>
+            </li>
 
-    <div class="pricing__three-header">
-      <span class="pricing__label">Pricing</span>
+            <li class="steps-section__item">
+              <span class="steps-section__number">02</span>
+              <div>
+                <h3>Download</h3>
+                <p>Browse and download the template that you like from the marketplace.</p>
+              </div>
+            </li>
 
-      <h1 class="pricing__title">Flexible Plans.</h1>
+            <li class="steps-section__item">
+              <span class="steps-section__number">03</span>
+              <div>
+                <h3>Run</h3>
+                <p>Follow the instructions to setup and customize the template to your needs.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
 
-      <p class="pricing__description">
-        Select the plan that best supports your goals, whether you are building
-        a personal blog, production website, or large company platform.
-      </p>
+    <!-- ========================================
+         VALUES
+    ========================================= -->
+    <section class="values-section section" id="values">
+      <div class="split-layout page-container">
+        <div class="split-layout__content">
+          <p class="section-heading__eyebrow">Values</p>
+          <h2 class="section-heading__title">
+            We Always Abide by Our <span>Principles.</span>
+          </h2>
+          <p class="split-layout__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </p>
+
+          <div class="values-section__grid">
+            <article class="values-section__item">
+              <h3><span class="values-section__badge values-section__badge--green">$</span> Affordable</h3>
+              <p>We promise to offer you the best rate we can—at par with the industry standard.</p>
+            </article>
+
+            <article class="values-section__item">
+              <h3><span class="values-section__badge values-section__badge--red">⌁</span> Professionalism</h3>
+              <p>We assure you that our templates are designed and created by professional designers.</p>
+            </article>
+          </div>
+
+          <a class="button" href="#pricing">Learn More</a>
+        </div>
+
+        <div class="values-section__image-wrap">
+          <img
+            class="values-section__image"
+            src="assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
+            alt="Team reviewing a responsive application prototype"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         PRICING
+    ========================================= -->
+    <section class="pricing-section section" id="pricing">
+      <div class="page-container">
+        <div class="section-heading section-heading--center">
+          <p class="section-heading__eyebrow">Pricing</p>
+          <h2 class="section-heading__title">Reasonable &amp; <span>Flexible Plans.</span></h2>
+          <p class="section-heading__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <div class="pricing-section__grid">
+          <article class="pricing-section__card pricing-section__card--personal">
+            <div class="pricing-section__top">
+              <h3>Personal</h3>
+              <p class="pricing-section__price">$17.99</p>
+              <p class="pricing-section__term">Monthly</p>
+            </div>
+            <div class="pricing-section__features">
+              <h4>For Individuals</h4>
+              <p>30 Templates</p>
+              <p>7 Landing Pages</p>
+              <p>12 Internal Pages</p>
+              <p>Basic Assistance</p>
+            </div>
+            <div class="pricing-section__action">
+              <button class="button button--teal" type="button" aria-disabled="true">Buy Now</button>
+            </div>
+          </article>
+
+          <article class="pricing-section__card pricing-section__card--business">
+            <div class="pricing-section__top">
+              <h3>Business</h3>
+              <p class="pricing-section__price">$37.99</p>
+              <p class="pricing-section__term">Monthly</p>
+            </div>
+            <div class="pricing-section__features">
+              <h4>For Small Businesses</h4>
+              <p>60 Templates</p>
+              <p>15 Landing Pages</p>
+              <p>22 Internal Pages</p>
+              <p>Priority Assistance</p>
+            </div>
+            <div class="pricing-section__action">
+              <button class="button button--light" type="button" aria-disabled="true">Buy Now</button>
+            </div>
+          </article>
+
+          <article class="pricing-section__card pricing-section__card--enterprise">
+            <div class="pricing-section__top">
+              <h3>Enterprise</h3>
+              <p class="pricing-section__price">$57.99</p>
+              <p class="pricing-section__term">Monthly</p>
+            </div>
+            <div class="pricing-section__features">
+              <h4>For Large Companies</h4>
+              <p>90 Templates</p>
+              <p>27 Landing Pages</p>
+              <p>37 Internal Pages</p>
+              <p>Personal Assistance</p>
+            </div>
+            <div class="pricing-section__action">
+              <button class="button button--coral" type="button" aria-disabled="true">Buy Now</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         TESTIMONIALS
+    ========================================= -->
+    <section class="testimonials-section section" id="testimonials">
+      <div class="testimonials-section__layout page-container">
+        <div class="testimonials-section__illustration-wrap">
+          <img
+            class="testimonials-section__illustration"
+            src="assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
+            alt="Customers sharing positive feedback"
+          />
+        </div>
+
+        <div class="testimonials-section__content">
+          <p class="section-heading__eyebrow">Testimonials</p>
+          <h2 class="section-heading__title">Our Clients <span>Love Us.</span></h2>
+          <p class="split-layout__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.
+          </p>
+
+          <article class="testimonials-section__quote" aria-live="polite">
+            <div class="testimonials-section__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <h3 class="testimonials-section__quote-title">Amazing User Experience</h3>
+            <blockquote class="testimonials-section__quote-text">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            </blockquote>
+
+            <div class="testimonials-section__footer">
+              <div class="testimonials-section__person">
+                <img
+                  class="testimonials-section__avatar"
+                  src="assets/photo-1494790108377-be9c29b29330.jpeg"
+                  alt="Charlotte Hale"
+                />
+                <div>
+                  <h4 class="testimonials-section__name">Charlotte Hale</h4>
+                  <p class="testimonials-section__role">Director, Delos Inc.</p>
+                </div>
+              </div>
+
+              <div class="testimonials-section__controls">
+                <button class="testimonials-section__control" type="button" data-direction="previous" aria-label="Previous testimonial">←</button>
+                <span aria-hidden="true"></span>
+                <button class="testimonials-section__control" type="button" data-direction="next" aria-label="Next testimonial">→</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         FAQ
+    ========================================= -->
+    <section class="faq-section section" id="faq">
+      <div class="faq-section__shape" aria-hidden="true"></div>
+
+      <div class="page-container">
+        <div class="section-heading section-heading--center">
+          <p class="section-heading__eyebrow">FAQs</p>
+          <h2 class="section-heading__title">You have <span>Questions?</span></h2>
+          <p class="section-heading__description">
+            And we have got answers to all of them. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div class="faq-section__list">
+          <article class="faq-section__item is-open">
+            <h3>
+              <button class="faq-section__question" type="button" aria-expanded="true">
+                <span>Are all the templates easily customizable?</span>
+                <span class="faq-section__chevron" aria-hidden="true">⌄</span>
+              </button>
+            </h3>
+            <div class="faq-section__answer">
+              <p>Yes, they all are. Every section uses clear, reusable classes and can be adapted to match your content, colors, and layout needs.</p>
+            </div>
+          </article>
+
+          <article class="faq-section__item">
+            <h3>
+              <button class="faq-section__question" type="button" aria-expanded="false">
+                <span>How long do you usually support a standalone template for?</span>
+                <span class="faq-section__chevron" aria-hidden="true">⌄</span>
+              </button>
+            </h3>
+            <div class="faq-section__answer" hidden>
+              <p>Standalone templates receive ongoing maintenance and practical guidance for the duration listed with each product.</p>
+            </div>
+          </article>
+
+          <article class="faq-section__item">
+            <h3>
+              <button class="faq-section__question" type="button" aria-expanded="false">
+                <span>What kind of payment methods do you accept?</span>
+                <span class="faq-section__chevron" aria-hidden="true">⌄</span>
+              </button>
+            </h3>
+            <div class="faq-section__answer" hidden>
+              <p>Major credit cards and widely used secure digital payment methods are supported at checkout.</p>
+            </div>
+          </article>
+
+          <article class="faq-section__item">
+            <h3>
+              <button class="faq-section__question" type="button" aria-expanded="false">
+                <span>Is there a subscription service to get the latest templates?</span>
+                <span class="faq-section__chevron" aria-hidden="true">⌄</span>
+              </button>
+            </h3>
+            <div class="faq-section__answer" hidden>
+              <p>Yes. Subscription plans provide access to new releases, updates, and an expanding component library.</p>
+            </div>
+          </article>
+
+          <article class="faq-section__item">
+            <h3>
+              <button class="faq-section__question" type="button" aria-expanded="false">
+                <span>Are the templates compatible with React?</span>
+                <span class="faq-section__chevron" aria-hidden="true">⌄</span>
+              </button>
+            </h3>
+            <div class="faq-section__answer" hidden>
+              <p>Yes. The original templates are designed for React, while this recreation uses semantic HTML, CSS, and lightweight JavaScript.</p>
+            </div>
+          </article>
+
+          <article class="faq-section__item">
+            <h3>
+              <button class="faq-section__question" type="button" aria-expanded="false">
+                <span>Do you really support Internet Explorer 11?</span>
+                <span class="faq-section__chevron" aria-hidden="true">⌄</span>
+              </button>
+            </h3>
+            <div class="faq-section__answer" hidden>
+              <p>This modern recreation targets current browsers so it can use responsive layouts and accessible interaction patterns reliably.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         CALL TO ACTION
+    ========================================= -->
+    <section class="cta-section section" id="contact">
+      <div class="cta-section__panel page-container">
+        <span class="cta-section__circle cta-section__circle--left" aria-hidden="true"></span>
+        <span class="cta-section__circle cta-section__circle--right" aria-hidden="true"></span>
+
+        <h2>Developers all over the world are happily using Treact.</h2>
+        <div class="cta-section__actions">
+          <a class="button button--coral" href="#home">Get Started</a>
+          <a class="button button--outline-light" href="mailto:hello@example.com">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================
+       FOOTER
+  ========================================= -->
+  <footer class="site-footer">
+    <div class="site-footer__shape" aria-hidden="true"></div>
+
+    <div class="page-container">
+      <div class="site-footer__links">
+        <div>
+          <h2>Main</h2>
+          <a href="#quality">Blog</a>
+          <a href="#faq">FAQs</a>
+          <a href="#contact">Support</a>
+          <a href="#features">About Us</a>
+        </div>
+
+        <div>
+          <h2>Product</h2>
+          <a href="#home">Log In</a>
+          <a href="#pricing">Personal</a>
+          <a href="#pricing">Business</a>
+          <a href="#pricing">Team</a>
+        </div>
+
+        <div>
+          <h2>Press</h2>
+          <a href="#home">Logos</a>
+          <a href="#testimonials">Events</a>
+          <a href="#testimonials">Stories</a>
+          <a href="#contact">Office</a>
+        </div>
+
+        <div>
+          <h2>Team</h2>
+          <a href="#contact">Career</a>
+          <a href="#values">Founders</a>
+          <a href="#values">Culture</a>
+          <a href="#steps">Onboarding</a>
+        </div>
+
+        <div>
+          <h2>Legal</h2>
+          <a href="#faq">GDPR</a>
+          <a href="#faq">Privacy Policy</a>
+          <a href="#faq">Terms of Service</a>
+          <a href="#faq">Disclaimer</a>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <a class="site-footer__brand" href="#home">
+          <span class="site-footer__logo" aria-hidden="true">T</span>
+          <span>Treact Inc.</span>
+        </a>
+
+        <p>© 2018 Treact Inc. All Rights Reserved.</p>
+
+        <div class="site-footer__socials" aria-label="Social media links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">t</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+        </div>
+      </div>
     </div>
+  </footer>
 
-    <div class="pricing__plan-grid">
-
-      <!-- PERSONAL PLAN -->
-      <article class="pricing__plan-card pricing__plan-card--personal">
-
-        <div class="pricing__plan-top">
-          <h2>Personal</h2>
-          <strong>$17.99</strong>
-          <span>Monthly</span>
-        </div>
-
-        <div class="pricing__plan-features">
-          <h3>Suited for Personal Blogs</h3>
-
-          <ul>
-            <li>30 Templates</li>
-            <li>7 Landing Pages</li>
-            <li>12 Internal Pages</li>
-            <li>Basic Assistance</li>
-          </ul>
-        </div>
-
-        <div class="pricing__plan-footer">
-          <button
-            class="pricing__plan-button"
-            type="button"
-            aria-disabled="true"
-          >
-            Buy Now
-          </button>
-        </div>
-      </article>
-
-      <!-- BUSINESS PLAN -->
-      <article class="pricing__plan-card pricing__plan-card--business">
-
-        <div class="pricing__plan-top">
-          <h2>Business</h2>
-          <strong>$37.99</strong>
-          <span>Monthly</span>
-        </div>
-
-        <div class="pricing__plan-features">
-          <h3>Suited for Production Websites</h3>
-
-          <ul>
-            <li>60 Templates</li>
-            <li>8 Landing Pages</li>
-            <li>22 Internal Pages</li>
-            <li>Priority Assistance</li>
-          </ul>
-        </div>
-
-        <div class="pricing__plan-footer">
-          <button
-            class="pricing__plan-button"
-            type="button"
-            aria-disabled="true"
-          >
-            Buy Now
-          </button>
-        </div>
-      </article>
-
-      <!-- ENTERPRISE PLAN -->
-      <article class="pricing__plan-card pricing__plan-card--enterprise">
-
-        <div class="pricing__plan-top">
-          <h2>Enterprise</h2>
-          <strong>$57.99</strong>
-          <span>Monthly</span>
-        </div>
-
-        <div class="pricing__plan-features">
-          <h3>Suited for Big Companies</h3>
-
-          <ul>
-            <li>90 Templates</li>
-            <li>9 Landing Pages</li>
-            <li>37 Internal Pages</li>
-            <li>Personal Assistance</li>
-          </ul>
-        </div>
-
-        <div class="pricing__plan-footer">
-          <button
-            class="pricing__plan-button"
-            type="button"
-            aria-disabled="true"
-          >
-            Buy Now
-          </button>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</article>
-</section>
-  <body></body>
+  <script src="index.js"></script>
+</body>
 </html>

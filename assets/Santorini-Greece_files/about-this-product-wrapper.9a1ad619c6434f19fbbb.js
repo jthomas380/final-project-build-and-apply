@@ -1,0 +1,3 @@
+/*@license For license information please refer to about-this-product-wrapper.licenses.txt*/
+(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[5843],{52274:function(e,r,t){t.d(r,{V:function(){return _}});var n=t(94876),i=t(69674),o=t(19547);const _=(e=!1)=>{const r=(0,o.W)(),t=(0,i.w)(),_=(0,o.F)();return{productIdentifier:{id:r,type:n.Wx.PROPERTY_ID,travelSearchCriteria:{property:{primary:{dateRange:null,rooms:[{adults:2}],destination:{regionId:null!=_?_:""}},...e&&{secondary:{selections:[{id:"egPlatformUrl",value:t}]}}}}}}}}}]);
+//# sourceMappingURL=https://bernie-assets.s3.us-west-2.amazonaws.com/landing-pwa/about-this-product-wrapper.9a1ad619c6434f19fbbb.js.map
